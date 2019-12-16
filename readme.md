@@ -40,13 +40,19 @@ Status Code: 200
 Body:
 ```
 {
-  "userId": "user-email-address",
-  "correlationId": "UUID",
-  "timestamp": "date-time"
-  "permissions": [
-    { "key-1": false },
-    { "key-2": true },
-  ]
+    "userId": "UserPrincipalName ",
+    "correlationId": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "timestamp": "12/16/2019 19:07:54",
+    "permissions": [
+        {
+            "key": "schedule-pickup",
+            "isAuthorized": true
+        },
+        {
+            "key": "dispatechers",
+            "isAuthorized": false
+        }
+    ]
 }
 ```
 
@@ -69,12 +75,18 @@ Status Code: 200
 Body:
 ```
 {
-  "userId": "user-email-address",
-  "correlationId": "UUID",
-  "timestamp": "date-time"
-  "roles": [
-    { "key-1": false },
-    { "key-2": true },
-  ]
+ "userId": "UserPrincipalName ",
+    "correlationId": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "timestamp": "12/16/2019 19:07:54",
+    "roles": [
+        {
+            "key": "schedule-pickup",
+            "isAuthorized": true
+        },
+        {
+            "key": "dispatechers",
+            "isAuthorized": false
+        }
+    ]
 }
 ```
